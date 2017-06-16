@@ -1,0 +1,16 @@
+<!-- <h3>Products Index</h3>
+  <ul>
+    {{#each model as |p|}}
+      <li>
+        {{#link-to 'createproduct'}}
+          {{p.name}}
+        {{/link-to}}
+        <button {{action 'delete' p}}>Delete</button>
+      </li>
+    {{/each}}
+  </ul> -->
+<!-- {{#link-to 'createproduct'}}New Product{{/link-to}} -->
+
+{{#each model as |productUnit|}}
+  {{product-listing product=productUnit}}
+{{/each}}

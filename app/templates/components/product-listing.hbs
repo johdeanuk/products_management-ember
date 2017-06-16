@@ -1,0 +1,25 @@
+{{!model.length}}
+<!-- {{#link-to 'product1'}}
+  link to product 1
+{{/link-to}} -->
+
+<article class="listing">
+  <!-- <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+    <img src=assets/image.png alt="">
+    <small>View Larger</small>
+  </a> -->
+  {{#link-to "product" product.id}}
+    <h3>{{product.name}}</h3>
+  {{/link-to}}
+  <div class="ean">
+    <span>EAN:</span> {{product.ean}}
+  </div>
+  <div class="basePrice">
+    <span>Base Price:</span> {{product.basePrice}}
+  </div>
+
+</article>
+
+
+
+<!-- ({{product.items.length}}) -->
